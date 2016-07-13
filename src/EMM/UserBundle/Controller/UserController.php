@@ -17,19 +17,19 @@ class UserController extends Controller
         return new Response('Agregar usuarios');
     }
     
-    public function editAction()
+    public function editAction($id)
     {
-        return new Response('Editar usuarios');
+        return new Response('Editar usuarios '.$id);
     }
     
-    public function viewAction()
+    public function viewAction($id)
     {
-        return new Response('Ver usuarios');
+        return new Response('Ver usuarios '.$id);
     }
     
-    public function deleteAction()
+    public function deleteAction($id)
     {
-        return new Response('Eliminar usuarios');
+        return new Response('Eliminar usuarios '.$id);
     }
  
 /*   
